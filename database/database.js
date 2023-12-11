@@ -3,8 +3,8 @@ import mongoose from 'mongoose';
 
 export const connectToDatabase = async () => {
   try {
-    await mongoose.connect('mongodb://localhost:27017/dataAnalysis', {
-      // dbName:"dataAnalysis",
+    await mongoose.connect(process.env.MONGO_URI, {
+      dbName:"dataAnalysis",
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
