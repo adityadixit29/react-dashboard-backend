@@ -1,0 +1,4 @@
+node_modules
+insetdata
+.env
+package-lock.json
